@@ -67,6 +67,7 @@ Unified LLM API with provider collections, automatic auth resolution, token and 
 - **Mistral**
 - **Groq**
 - **Cerebras**
+- **Capgemini**
 - **Cloudflare AI Gateway**
 - **Cloudflare Workers AI**
 - **xAI**

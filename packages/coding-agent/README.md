@@ -134,6 +134,7 @@ For each built-in provider, pi maintains a list of tool-capable models, updated 
 - Xiaomi MiMo Token Plan (China)
 - Xiaomi MiMo Token Plan (Amsterdam)
 - Xiaomi MiMo Token Plan (Singapore)
+- Capgemini
 
 See [docs/providers.md](docs/providers.md) for detailed setup instructions.
 

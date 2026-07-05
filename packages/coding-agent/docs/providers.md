@@ -58,6 +58,7 @@ pi
 | Mistral | `MISTRAL_API_KEY` | `mistral` |
 | Groq | `GROQ_API_KEY` | `groq` |
 | Cerebras | `CEREBRAS_API_KEY` | `cerebras` |
+| Capgemini | `CAPGEMINI_API_KEY` | `capgemini` |
 | Cloudflare AI Gateway | `CLOUDFLARE_API_KEY` (+ `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_GATEWAY_ID`) | `cloudflare-ai-gateway` |
 | Cloudflare Workers AI | `CLOUDFLARE_API_KEY` (+ `CLOUDFLARE_ACCOUNT_ID`) | `cloudflare-workers-ai` |
 | xAI | `XAI_API_KEY` | `xai` |
@@ -258,6 +259,42 @@ export GOOGLE_CLOUD_LOCATION=us-central1
 ```
 
 Or set `GOOGLE_APPLICATION_CREDENTIALS` to a service account key file.
+
+### Capgemini
+
+Capgemini provides access to multiple foundation models through an OpenAI-compatible Chat Completions endpoint.
+
+**Setup:**
+
+```bash
+export CAPGEMINI_API_KEY=your-api-key
+```
+
+Optionally override the default endpoint:
+
+```bash
+export CAPGEMINI_API_BASE_URL=https://your-custom-endpoint/v1
+```
+
+Default endpoint: `https://openai.generative-eu.engine.capgemini.com/v1`
+
+**Available Models:**
+
+The following 13 models are available:
+
+- **Amazon Nova**: `amazon.nova-micro-v1:0`, `amazon.nova-pro-v1:0`, `amazon.nova-lite-v1:0`
+- **Anthropic Claude**: `anthropic.claude-sonnet-4-20250514-v1:0`, `anthropic.claude-sonnet-4-5-20250929-v1:0`, `anthropic.claude-haiku-4-5-20251001-v1:0`, `anthropic.claude-sonnet-4-6`
+- **Mistral**: `mistral.mistral-7b-instruct-v0:2`, `mistral.mistral-large-2402-v1:0`, `mistral.devstral-2-123b`
+- **Google Gemini**: `gemini-2.5-flash-lite`, `gemini-3.5-flash`
+- **Phi**: `phi-4-mini-reasoning`
+
+Use `/model` in interactive mode to select a model:
+
+```bash
+pi
+/model
+# Select "Capgemini" and then choose from available models
+```
 
 ## Custom Providers
 
