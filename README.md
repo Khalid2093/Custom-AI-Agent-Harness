@@ -10,7 +10,7 @@
 
 > New issues and PRs from new contributors are auto-closed by default. Maintainers review auto-closed issues daily. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-# Pi Agent Harness
+# Custom Agent Harness built using PI
 
 This is the home of the Pi agent harness project including our self extensible coding agent.
 
